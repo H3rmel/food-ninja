@@ -13,7 +13,7 @@ const Card = ({name, by, image}: Props) => {
       <img src={image} alt={`${name} photo`} className="card-image" />
       <div className="flex flex-col m-4">
         <span className="font-bold">{name}</span>
-        <span className="text-gray-500 text-sm">{by}</span>
+        <span className="text-gray-500 text-sm">Baked by {by}</span>
       </div>
       <span className="card-badge">
         <HiOutlineClock size={16} />
