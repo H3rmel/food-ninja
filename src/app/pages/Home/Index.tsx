@@ -18,29 +18,45 @@ const Home = () => {
           <SectionTitle title="Latest Recipes" />
           <CardContainer>
             <>
-              {recipes.map((recipe) => (
-                <Card
-                  key={recipe.id}
-                  name={recipe.name}
-                  by={recipe.by}
-                  image={recipe.image}
-                  time={recipe.time}
-                />
-              ))}
+              {recipes.map(
+                (recipe: {
+                  id: number;
+                  name: string;
+                  by: string;
+                  image: string;
+                  time: number;
+                }) => (
+                  <Card
+                    key={recipe.id}
+                    name={recipe.name}
+                    by={recipe.by}
+                    image={recipe.image}
+                    time={recipe.time}
+                  />
+                )
+              )}
             </>
           </CardContainer>
           <SectionTitle title="Most Popular" />
           <CardContainer>
             <>
-              {recipes.map((recipe) => (
-                <Card
-                  key={recipe.id}
-                  name={recipe.name}
-                  by={recipe.by}
-                  image={recipe.image}
-                  time={recipe.time}
-                />
-              ))}
+              {recipes.map(
+                (recipe: {
+                  id: number;
+                  name: string;
+                  by: string;
+                  image: string;
+                  time: number;
+                }) => (
+                  <Card
+                    key={recipe.id}
+                    name={recipe.name}
+                    by={recipe.by}
+                    image={recipe.image}
+                    time={recipe.time}
+                  />
+                )
+              )}
             </>
           </CardContainer>
           <LoadMore />
