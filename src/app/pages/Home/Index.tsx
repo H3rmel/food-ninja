@@ -1,5 +1,6 @@
 // Component(s)
 import Layout from "../../components/Layout/Index";
+import Header from "../../components/Header/Index";
 import Card from "../../components/Card/Index";
 import CardContainer from "../../components/CardContainer/Index";
 import SectionTitle from "../../components/SectionTitle/Index";
@@ -12,10 +13,7 @@ const Home = () => {
   return (
     <Layout title="Home">
       <>
-        <header>
-          <h2 className="text-gray-700 text-6xl font-semibold">Recipes</h2>
-          <h3 className="text-2xl font-semibold">For Ninjas</h3>
-        </header>
+        <Header title="Recipes" subtitle="For Ninjas" />
         <div>
           <SectionTitle title="Latest Recipes" />
           <CardContainer>
@@ -26,6 +24,7 @@ const Home = () => {
                   name={recipe.name}
                   by={recipe.by}
                   image={recipe.image}
+                  time={recipe.time}
                 />
               ))}
             </>
@@ -39,6 +38,7 @@ const Home = () => {
                   name={recipe.name}
                   by={recipe.by}
                   image={recipe.image}
+                  time={recipe.time}
                 />
               ))}
             </>

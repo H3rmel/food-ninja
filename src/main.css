@@ -15,7 +15,7 @@
 
 /* Section Selectors */
 .section-title {
-    @apply font-bold mt-12 pb-2 border-b border-gray-200;
+    @apply font-bold mt-12 pb-2 border-b border-gray-200 text-center md:text-left;
 }
 
 /* Card Selectors */
@@ -30,7 +30,6 @@
 .card-badge {
     @apply flex gap-1 bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-lg px-2 py-1 absolute top-1 left-1;
 }
-
 
 /* Buttons Selectors */
 .btn {

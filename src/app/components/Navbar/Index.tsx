@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 import {
   HiOutlineHome,
   HiOutlineQuestionMarkCircle,
-  HiOutlineMail,
   HiOutlineMenuAlt3,
 } from "react-icons/hi";
 
@@ -48,15 +47,6 @@ const Navbar = () => {
             >
               About
               <HiOutlineQuestionMarkCircle size={20} />
-            </Link>
-          </li>
-          <li className="py-1">
-            <Link
-              to="/contact"
-              className="nav-link"
-            >
-              <span>Contact</span>
-              <HiOutlineMail size={20} />
             </Link>
           </li>
         </ul>

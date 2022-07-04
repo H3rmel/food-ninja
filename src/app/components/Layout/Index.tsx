@@ -12,7 +12,7 @@ type Props = {
 
 const Layout = ({ children, title }: Props) => {
   return (
-    <div className="px-16 py-6 bg-gray-100 md:col-span-4">
+    <div className="px-8 md:px-16 py-6 bg-gray-100 md:col-span-4">
       <Helmet>
         <title>Food Ninja | {title}</title>
       </Helmet>

@@ -2,12 +2,13 @@
 import { HiOutlineClock } from "react-icons/hi";
 
 type Props = {
-    name: string;
-    by: string;
-    image: string;
-}
+  name: string;
+  by: string;
+  image: string;
+  time: number;
+};
 
-const Card = ({name, by, image}: Props) => {
+const Card = ({ name, by, image, time }: Props) => {
   return (
     <div className="card">
       <img src={image} alt={`${name} photo`} className="card-image" />
@@ -17,7 +18,7 @@ const Card = ({name, by, image}: Props) => {
       </div>
       <span className="card-badge">
         <HiOutlineClock size={16} />
-        25 mins
+        {time} mins
       </span>
     </div>
   );
