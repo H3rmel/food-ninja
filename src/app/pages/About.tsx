@@ -55,29 +55,25 @@ const About = () => {
           </p>
         </div>
         <SectionTitle title="Contact me:" />
-        <div className="flex justify-evenly mt-8">
-          <div className="flex flex-col gap-4">
-            <AnchorChildren link="https://www.linkedin.com/in/isaachermel/">
-              <>
-                <SiLinkedin size={22} />
-                LinkedIn
-              </>
-            </AnchorChildren>
-            <AnchorChildren link="mailto:isaachermel@gmail.com">
-              <>
-                <SiGmail size={22} />
-                Gmail
-              </>
-            </AnchorChildren>
-          </div>
-          <div className="flex flex-col gap-4">
-            <AnchorChildren link="https://github.com/H3rmel">
-              <>
-                <SiGithub size={22} />
-                GitHub
-              </>
-            </AnchorChildren> 
-          </div>
+        <div className="flex items-center flex-col md:flex-row md:justify-evenly my-8">
+          <AnchorChildren link="https://www.linkedin.com/in/isaachermel/">
+            <>
+              <SiLinkedin size={33} />
+              LinkedIn
+            </>
+          </AnchorChildren>
+          <AnchorChildren link="https://github.com/H3rmel">
+            <>
+              <SiGithub size={33} />
+              GitHub
+            </>
+          </AnchorChildren>
+          <AnchorChildren link="mailto:isaachermel@gmail.com">
+            <>
+              <SiGmail size={33} />
+              Gmail
+            </>
+          </AnchorChildren>
         </div>
       </>
     </Layout>

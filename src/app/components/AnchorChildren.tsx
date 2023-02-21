@@ -9,7 +9,7 @@ const AnchorChildren = ({ link, children }: Props) => {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center gap-2 font-bold text-lg hover:text-primary transition ease-out duration-300"
+      className="flex flex-col md:flex-row items-center gap-2 font-bold text-lg hover:text-primary transition ease-out duration-300"
     >
       {children}
     </a>
