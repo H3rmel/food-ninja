@@ -2,7 +2,7 @@
 import Router from "./pages/Router";
 
 // Component(s)
-import Navbar from "./components/Navbar/Index";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (

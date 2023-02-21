@@ -1,13 +1,12 @@
 // React Icons
-import { SiLinkedin, SiGmail, SiGithub } from "react-icons/si";
-import { CgWebsite } from "react-icons/cg";
+import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
 
 // Component(s)`
-import Layout from "../../components/Layout/Index";
-import Header from "../../components/Header/Index";
-import Anchor from "../../components/Anchor/Index";
-import AnchorChildren from "../../components/AnchorChildren/Index";
-import SectionTitle from "../../components/SectionTitle/Index";
+import Anchor from "../components/Anchor";
+import AnchorChildren from "../components/AnchorChildren";
+import Header from "../components/Header";
+import Layout from "../components/Layout/Index";
+import SectionTitle from "../components/SectionTitle";
 
 const About = () => {
   return (
@@ -15,9 +14,7 @@ const About = () => {
       <>
         <Header title="About" subtitle="this project!" />{" "}
         <h6 className="mt-8 text-lg text-justify">
-          This project was made by{" "}
-          <Anchor link="https://isaachermel.com.br" text="Isaac Hermel" />{" "}
-          (a.k.a myself) to learn{" "}
+          This project was made by Isaac Hermel (a.k.a myself) to learn{" "}
           <Anchor link="https://tailwindcss.com/" text="Tailwind CSS" /> and
           it's basics features, seeing the{" "}
           <Anchor
@@ -79,12 +76,7 @@ const About = () => {
                 <SiGithub size={22} />
                 GitHub
               </>
-            </AnchorChildren>
-            <AnchorChildren link="https://isaachermel.com.br">
-              <>
-                <CgWebsite size={22} /> Website
-              </>
-            </AnchorChildren>
+            </AnchorChildren> 
           </div>
         </div>
       </>

@@ -2,7 +2,7 @@
 import { Helmet } from "react-helmet";
 
 // Component(s)
-import Account from "../Account/Index";
+import Account from "../Account";
 
 // Props
 type Props = {
